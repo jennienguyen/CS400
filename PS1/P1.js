@@ -1,5 +1,3 @@
-//need to change function to ignore punctuation
-
 //using function
 function abcOrdering(string) {
     return string.replace(/[&\/\\#,+()$~%.'":*?<>{}!]/g,'').split('').sort().join('');
