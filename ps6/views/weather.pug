@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 What would you like to do?
+    form(action='/ps4/get_temp', method='GET')
+        p View the current temperature in Boston
+        input(type='submit', value='View Temp')
+
+    form(action='/ps4/get_high', method='POST')
+        p View the high temperature logged in Boston
+        input(type='submit', value='View Highest Temp')
+
+
