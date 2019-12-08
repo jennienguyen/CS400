@@ -1,0 +1,5 @@
+
+<div *ngIf="receivedWeather; else elseBlock">
+  <p>The temperature in {{location}} currently is </p>
+  <li *ngFor="let weather of receivedWeather">{{weather}}</li>
+</div>

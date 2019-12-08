@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <p>
+    Hello! Welcome to the weather app!
+  </p>
+
+  <label>Enter your location:</label>
+  <input placeholder="Boston" [(ngModel)]="location" [formControl]="searchText" type="text"/>
+  <br/>
+  <br/>
+  <button (click)="getWeather()">Get weather conditions</button>
+  <!-- Field is empty, please enter something in search field -->
+
+  <app-output-component [location]="location" [receivedWeather]="weather"></app-output-component>
+</div>
+
+
